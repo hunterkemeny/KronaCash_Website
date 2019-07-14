@@ -1,0 +1,183 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*need to do reactive development */
+
+body {
+  background-color: rgb(32, 32, 32);
+}
+
+.header {
+  color: green;
+  padding-top: 20px;
+  padding-left: 20px;
+  text-align: center;
+  width: 100%;
+  background-color: black; /* temp */
+  padding-bottom: 20px;
+
+}
+
+#logo {
+  font-size: 30px;
+  display: inline-block;
+  padding-right: 50%;
+  position: relative;
+  right: 75px;
+}
+
+#business {
+  display: inline-block;
+  position: relative;
+  right: 15px;
+  font-size: 20px;
+}
+
+.intro {    /* need to figure out centering/spacing */
+  width: 100%;
+  padding-bottom: 100px;
+  text-align: center;
+  background-color: white;
+  height: 550px;
+}
+
+.intro .iphone   {
+  padding-top: 100px;
+  display: inline-block;
+  width: 300px; /*temp */
+  height: 450px;
+  position: relative;
+  left: 150px;
+}
+
+.slogans {
+  display: inline-block;
+  position: relative;
+  bottom: 200px;
+  left: 150px;
+}
+
+.slogans h1 {
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+.slogans h2 {
+  font-size: 25px;
+}
+
+.appstore {
+  display: inline-block;
+  position: relative;
+  bottom: 100px;
+  right: 310px;
+  text-align: center;
+}
+
+.appstore .getit {
+  display: inline-block;
+  padding: 10px;
+  height: 50px;
+  width: 170px;
+}
+
+.brief-exp {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.brief-exp p {
+  padding: 90px;
+  font-size: 50px;
+  color: white;
+}
+
+.features {
+  width: 100%;
+  background: green;
+  text-align: center;
+}
+
+.features .iphone {
+  width: 300px; /*temp */
+  height: 450px;
+  padding-top: 50px;
+}
+
+.featurelist {
+  display: inline-block;
+  padding-left: 270px;
+  padding-bottom: 70px;
+}
+
+.featurelist h3 {
+  font-size: 50px;
+}
+
+.featurelist p {
+  font-size: 30px;
+}
+
+
+.footer {
+  width: 100%;
+  height: 300px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.foot-logo {
+  padding-top: 50px;
+  font-size: 25px;
+  color: green;
+}
+
+.footer ul {
+  display: inline-block;
+  list-style: none;
+  vertical-align: top;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer .title {
+  color: white;
+}
+
+.footer li {
+  color: rgb(80, 80, 80);
+}
+
+.copy {
+  text-align: center;
+}
+
+.copy p {
+  display: inline-block;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  font-size: 12px;
+}
