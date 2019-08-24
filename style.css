@@ -19,71 +19,105 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+@font-face {
+	font-family: "Bebas Neue";
+	src: url(./BebasNeue/BebasNeue-Bold.ttf) format('truetype');
+}
+
 /*need to do reactive development */
+/*height of iMac is 2666.67px, width is 4000px, official is 2880 width and 5120 height*/
+html {
+	font-size: 20px;
+}
 
 body {
-  background-color: rgb(32, 32, 32);
+  background-color: rgb(255, 255, 255);
 }
 
 .header {
-  color: green;
-  padding-top: 20px;
-  padding-left: 20px;
-  text-align: center;
   width: 100%;
-  background-color: black; /* temp */
-  padding-bottom: 20px;
-
+  background-color: rgb(40, 40, 40);
+	min-height: 45px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 #logo {
-  font-size: 30px;
-  display: inline-block;
-  padding-right: 50%;
-  position: relative;
-  right: 75px;
+	width: 7.8%;
+	height: 38px; /* percent not working */
+	min-width: 200px;
+	max-width: 200px;
+	min-height: 40px;
+	max-height: 50px;
+	padding: 20px;
+	/*figure out flex shrink, maybe */
+	/* make logo and waitlist vertically aligned on mobile */
 }
 
-#business {
-  display: inline-block;
-  position: relative;
-  right: 15px;
-  font-size: 20px;
+#waitlist {
+	color: white;
+	display: inline-flex;
+/* might need to use position */
+  font-size: 1rem;
+	font-family: 'Arimo', sans-serif;
+	padding: 20px;
+
 }
 
-.intro {    /* need to figure out centering/spacing */
+.intro {
   width: 100%;
-  padding-bottom: 100px;
-  text-align: center;
-  background-color: white;
-  height: 550px;
+	background-image: url(./bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 50px;
+	/* make the height grow when page shrinks so that you can see the slogans*/
 }
 
-.intro .iphone   {
-  padding-top: 100px;
-  display: inline-block;
-  width: 300px; /*temp */
-  height: 450px;
-  position: relative;
-  left: 150px;
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.mainphone   {
+	margin-left: 90px;
+	margin-right: 90px;
+	margin-top: 90px;
+}
+
+#iphone {
+	width: 300px; /*temp */
+	height: 450px;
+	/* flex grow? */
+}
+
+.sloganscontainer {
+  display: inline-flex;
 }
 
 .slogans {
-  display: inline-block;
-  position: relative;
-  bottom: 200px;
-  left: 150px;
+	font-family: 'Arimo', sans-serif;
+	color: white;
+	text-align: center;
+	padding-top: 50px;
 }
 
 .slogans h1 {
-  font-size: 40px;
-  text-decoration: underline;
+  font-size: 1.5rem;
+	padding: 10px;
 }
 
 .slogans h2 {
-  font-size: 25px;
+  font-size: 1.25rem;
+	padding: 10px;
+	padding-bottom: 20px;
 }
 
+/* need to get on the app store
 .appstore {
   display: inline-block;
   position: relative;
@@ -99,27 +133,35 @@ body {
   width: 170px;
 }
 
+*/
+
 .brief-exp {
   width: 100%;
-  height: 400px;
+  height: 100%; /* I don't understand why this is 100% */
   display: flex;
   justify-content: space-around;
+	align-items: center;
+	font-family: 'Arimo', sans-serif;
+	flex-wrap: wrap;
 }
 
 .brief-exp p {
-  padding: 90px;
-  font-size: 50px;
-  color: white;
+	padding: 5%;
+  font-size: 1.5rem;
+  color: rgb(107, 31, 236);
+	width: 12%;
+	min-width: 300px;
 }
 
+/* Don't have features yet
 .features {
   width: 100%;
-  background: green;
+  background: rgb(51, 51, 51);
   text-align: center;
 }
 
 .features .iphone {
-  width: 300px; /*temp */
+  width: 300px;
   height: 450px;
   padding-top: 50px;
 }
@@ -128,56 +170,86 @@ body {
   display: inline-block;
   padding-left: 270px;
   padding-bottom: 70px;
+	position: relative;
+	bottom: 40px;
 }
 
 .featurelist h3 {
-  font-size: 50px;
+  font-size: 2.5rem;
 }
 
 .featurelist p {
-  font-size: 30px;
+  font-size: 1.5rem;
 }
 
+*/
 
 .footer {
   width: 100%;
-  height: 300px;
-  font-size: 20px;
-  text-align: center;
+  font-size: 1rem;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Arimo', sans-serif;
+	padding-bottom: 1%;
 }
 
-.foot-logo {
-  padding-top: 50px;
-  font-size: 25px;
-  color: green;
+.logo-div {
+	display: flex;
+	justify-content: center;
+}
+
+.bottom-logo {
+	width: 8%;
+	height: 40px;
+	min-width: 200px;
+	min-height: 40px;
+	padding-top: 2%;
+}
+
+.information {
+	justify-content: center;
+	display: flex;
+	padding-bottom: 5%;
+	padding-top: 2%;
 }
 
 .footer ul {
-  display: inline-block;
   list-style: none;
-  vertical-align: top;
-  padding-top: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1%;
+  padding-right: 1%;
+	flex-wrap: wrap;
 }
 
 .footer .title {
   color: white;
+	font-size: 1.2rem;
+	padding-bottom: 20px;
+
 }
 
 .footer li {
-  color: rgb(80, 80, 80);
+  color: rgb(150, 150, 150);
+	padding: 5px;
+}
+
+.footer a {
+	color: rgb(150, 150, 150);
 }
 
 .copy {
-  text-align: center;
+	background-color: black;
+	display: flex;
+	justify-content: center;
 }
 
 .copy p {
-  display: inline-block;
   color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 20px;
-  font-size: 12px;
+  padding-left: .7%;
+  padding-right: .7%;
+  padding-bottom: 2%;
+  font-size: .6rem;
+	flex-wrap: wrap;
 }
+
+/* too much space at the bottom */
